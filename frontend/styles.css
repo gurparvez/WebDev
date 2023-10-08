@@ -1,15 +1,29 @@
-/* Reset default margin and padding */
 body, h1, h2, ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* Style the header and navigation bar */
 header {
     background-color: #007BFF;
     color: #fff;
     padding: 10px 0;
-    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
 }
 
 nav ul {
@@ -19,8 +33,12 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    float: left;
+    margin: 5px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
 }
 
 nav ul li a {
@@ -38,10 +56,6 @@ nav ul li a {
     margin: 100px auto;
 }
 
-h2 {
-    margin-top: 0;
-}
-
 label {
     display: block;
     text-align: left;
@@ -49,7 +63,7 @@ label {
 }
 
 input {
-    width: 100%;
+    width: 94%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
